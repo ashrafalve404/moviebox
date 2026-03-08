@@ -45,8 +45,8 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-md">
+    <div className="min-h-screen bg-black flex items-center justify-center px-6 py-20">
+      <div className="w-full max-w-md mt-10">
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2">
             <FaFilm className="text-red-600 text-4xl" />

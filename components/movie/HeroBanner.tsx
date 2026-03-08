@@ -24,7 +24,7 @@ export default function HeroBanner({ movie }: HeroBannerProps) {
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
       
       <div className="absolute bottom-0 left-0 right-0 pb-12 md:pb-16">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container-custom">
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-3">
               <span className="flex items-center gap-1 text-yellow-500 text-sm font-medium">

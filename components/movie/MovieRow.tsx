@@ -27,8 +27,8 @@ export default function MovieRow({ title, movies }: MovieRowProps) {
 
   return (
     <div className="relative group">
-      <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-xl font-semibold text-white mb-4">{title}</h2>
+      <div className="container-custom">
+        <h2 className="text-xl md:text-2xl font-semibold text-white mb-4">{title}</h2>
       </div>
       
       <button
@@ -40,16 +40,14 @@ export default function MovieRow({ title, movies }: MovieRowProps) {
       
       <div
         ref={scrollRef}
-        className="flex gap-4 overflow-x-auto scrollbar-hide px-4 md:px-8 py-2"
+        className="container-custom flex gap-4 overflow-x-auto scrollbar-hide py-2"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        <div className="container mx-auto flex gap-4">
-          {movies.map((movie) => (
-            <div key={movie.id} className="flex-shrink-0 w-[140px] md:w-[180px] lg:w-[200px]">
-              <MovieCard movie={movie} />
-            </div>
-          ))}
-        </div>
+        {movies.map((movie) => (
+          <div key={movie.id} className="flex-shrink-0 w-[140px] md:w-[180px] lg:w-[200px]">
+            <MovieCard movie={movie} />
+          </div>
+        ))}
       </div>
       
       <button

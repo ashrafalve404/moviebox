@@ -102,7 +102,7 @@ export default function MovieDetailPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
       </div>
 
-      <div className="container mx-auto px-4 -mt-40 relative z-10">
+      <div className="container-custom -mt-40 relative z-10">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="w-full lg:w-72 flex-shrink-0">
             <div className="relative aspect-[2/3] rounded-xl overflow-hidden shadow-2xl border border-zinc-800">

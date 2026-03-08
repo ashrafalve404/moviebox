@@ -38,7 +38,7 @@ export default function Navbar() {
         isScrolled ? 'bg-black/95 backdrop-blur-sm' : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2">

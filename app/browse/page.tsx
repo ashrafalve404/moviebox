@@ -62,8 +62,8 @@ function BrowseContent() {
   };
 
   return (
-    <div className="bg-black min-h-screen pt-24 pb-12">
-      <div className="container mx-auto px-4 md:px-8">
+    <div className="bg-black min-h-screen pt-28 pb-12">
+      <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
           <h1 className="text-3xl font-bold text-white">Browse Movies</h1>
           <SearchBar />
@@ -127,8 +127,8 @@ function BrowseContent() {
 export default function BrowsePage() {
   return (
     <Suspense fallback={
-      <div className="bg-black min-h-screen pt-24 pb-12">
-        <div className="container mx-auto px-4">
+      <div className="bg-black min-h-screen pt-28 pb-12">
+        <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {Array.from({ length: 10 }).map((_, i) => (
               <MovieCardSkeleton key={i} />

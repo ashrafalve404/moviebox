@@ -50,8 +50,8 @@ function ProfileContent() {
   const displayedMovies = activeTab === 'watchlist' ? watchlist : likedMovies;
 
   return (
-    <div className="bg-black min-h-screen pt-24 pb-12">
-      <div className="container mx-auto px-4">
+    <div className="bg-black min-h-screen pt-28 pb-12">
+      <div className="container-custom">
         <div className="flex flex-col md:flex-row gap-8 mb-12">
           <div className="flex flex-col items-center">
             <div className="relative w-32 h-32 rounded-full overflow-hidden bg-zinc-800 mb-4">
@@ -163,7 +163,7 @@ function ProfileContent() {
 export default function ProfilePage() {
   return (
     <Suspense fallback={
-      <div className="bg-black min-h-screen pt-24 flex items-center justify-center">
+      <div className="bg-black min-h-screen pt-28 flex items-center justify-center">
         <div className="text-zinc-400">Loading...</div>
       </div>
     }>

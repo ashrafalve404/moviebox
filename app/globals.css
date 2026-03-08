@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --container-2xl: 1440px;
+}
+
+@layer utilities {
+  .container-custom {
+    @apply w-full mx-auto px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 max-w-[1600px];
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -27,7 +37,9 @@ body {
 body {
   background: #000;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
 }
 
 a {
